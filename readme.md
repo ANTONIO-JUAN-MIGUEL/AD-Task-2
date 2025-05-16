@@ -103,35 +103,46 @@ A boxing tutorial website built with PHP that teaches fundamental punches (jab, 
 10. File Structure to follow below.
 
 ```
-AD-Task-1
-└─ assets
-|   └─ css
-|   |   └─ style.css (Main styles)
-|   └─ img
-|      └─ box.jpg
-|      └─ jab.jpg
-|      └─ straight.jpg
-|      └─ hook.jpg
-|      └─ uppercut.jpg
-|      └─ slugger-style.jpg
-|      └─ orthodox.jpg
-|      └─ southpaw.jpg
-|      └─ square.jpg
-|      └─ madman.jpg
-|   
-|
-└─ components
-|   └─ index.php (Navigation component)
-└─ page
-|  └─ assets
-|  |   └─ css
-|  |      └─ style.css (Page-specific styles)
-|  └─ index.php    |  
-|     
-└─ index.php (Landing page)
-└─ readme.md
+AD-Task-2/
+├── assets/
+│   ├── css/
+│   │   └── style.css (Main styles)
+│   └── img/
+│       ├── box.jpg
+│       ├── jab.jpg
+│       ├── straight.jpg
+│       ├── hook.jpg
+│       ├── uppercut.jpg
+│       ├── slugger-style.jpg
+│       ├── orthodox.jpg
+│       ├── southpaw.jpg
+│       ├── square.jpg
+│       └── madman.jpg
+│
+├── components/
+│   └── navigation.component.php
+│
+├── utils/
+│   └── config.util.php
+│
+├── page/ 
+│   ├── assets/
+│   │   └── css/
+│   │       └── style.css (Page-specific styles)
+│   └── index.php
+│
+├── vendor/ (Composer dependencies)
+│   ├── autoload.php
+├
+├── index.php (Home page)
+├── bootstrap.php
+├── router.php
+├── composer.json
+├── composer.lock 
+├── .gitignore 
+└── README.md
 ```
-> The following should be renamed: name.css, name.js, name.jpeg/.jpg/.webp/.png, name.component.php(but not the part of the `component.php`), Name.utils.php(but not the part of the `utils.php`)
+> The following should be renamed: name.css, name.js, name.jpeg/.jpg/.webp/.png, name.component.php(but not the part of the `component.php`), Name.utils.php(but not the part of the `utils.php`) bghh
 
 ## Resources
 
