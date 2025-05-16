@@ -47,7 +47,7 @@ $founderInfo = getFounderInfo();
 
             <?php
             if ($upcomingMatch) {
-                echo "He has an upcoming amateur championship title match scheduled this year.";
+                echo "He has an upcoming amateur championship title match scheduled this year and will be fighting in the professionals next year.";
             } else {
                 echo "My next match is currently uncheduled.";
             }
