@@ -7,3 +7,8 @@ function getBoxingStyles()
         "Swarmer" => "Focuses on constant pressure and volume punching"
     ];
 }
+
+function getPunchTypes()
+{
+    return ["Jab", "Straight", "Hook", "Uppercut"];
+}
