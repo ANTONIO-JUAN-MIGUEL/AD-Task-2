@@ -1,5 +1,5 @@
 <?php
-require_once 'utils/config.util.php';
+require_once __DIR__ . '/utils/config.util.php';
 
 // DECLARATIONS
 $siteTitle = "Madman's Boxing Basics";
@@ -20,7 +20,8 @@ $founderInfo = getFounderInfo();
 </head>
 
 <body>
-    <?php include 'components/navigation.component.php'; ?>
+    <?php include __DIR__ . '/components/navigation.component.php'; ?>
+
 
     <h1>Welcome to <?php echo $siteTitle; ?>!</h1>
 
