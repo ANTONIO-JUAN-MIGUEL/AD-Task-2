@@ -9,11 +9,11 @@ $navLinks = [
 
 <!-- Simple navigation component -->
 <nav>
-    <?php 
+    <?php
     // LOOPING through navigation links
-    foreach($navLinks as $text => $url) {
+    foreach ($navLinks as $text => $url) {
         echo "<a href=\"$url\">$text</a>";
-        if($text != array_key_last($navLinks)) {
+        if ($text != array_key_last($navLinks)) {
             echo " | ";
         }
     }
