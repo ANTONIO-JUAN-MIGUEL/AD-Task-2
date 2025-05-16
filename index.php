@@ -22,38 +22,39 @@ $founderInfo = getFounderInfo();
 <body>
     <?php include __DIR__ . '/components/navigation.component.php'; ?>
 
+    <div class="home-container">
+        <h1>Welcome to <?php echo $siteTitle; ?>!</h1>
 
-    <h1>Welcome to <?php echo $siteTitle; ?>!</h1>
-
-    <p>Here in Madman's Boxing Basics, you will learn the basic punches in boxing:
-        <?php
-        foreach ($punchTypes as $index => $punch) {
-            echo $punch;
-            if ($index < count($punchTypes) - 1) {
-                echo ", ";
+        <p>Here in Madman's Boxing Basics, you will learn the basic punches in boxing:<br>
+            <?php
+            foreach ($punchTypes as $index => $punch) {
+                echo $punch;
+                if ($index < count($punchTypes) - 1) {
+                    echo ", ";
+                }
             }
-        }
-        ?>. <br> You will also learn the different stances in boxing. His current fighting style is the
-        <?php echo $fightingStyle; ?>.
-    </p>
+            ?>. <br> You will also learn the different stances in boxing. His current fighting style is the
+            <?php echo $fightingStyle; ?>.
+        </p>
 
-    <div class="photo-container">
-        <img src="assets/img/Box.jpg" alt="Boxing Basics">
+        <div class="photo-container">
+            <img src="assets/img/Box.jpg" alt="Boxing Basics">
+        </div>
+
+        <p>Founded by <?php echo $founderInfo['name']; ?>, an amateur boxer with a record of
+            <?php echo $founderInfo['record']; ?> in the <?php echo $founderInfo['division']; ?> division.
+
+            <?php
+            if ($upcomingMatch) {
+                echo "He has an upcoming amateur championship title match scheduled this year.";
+            } else {
+                echo "My next match is currently uncheduled.";
+            }
+            ?>
+        </p>
+
+        <a href="page/index.php" class="home-link">Learn More About Boxing Basics</a>
     </div>
-
-    <p>Founded by <?php echo $founderInfo['name']; ?>, an amateur boxer with a record of
-        <?php echo $founderInfo['record']; ?> in the <?php echo $founderInfo['division']; ?> division.
-
-        <?php
-        if ($upcomingMatch) {
-            echo "He has an upcoming amateur championship title match scheduled this year.";
-        } else {
-            echo "My next match is currently uncheduled.";
-        }
-        ?>
-    </p>
-
-    <a href="page/index.php">Learn More About Boxing Basics</a>
 </body>
 
 </html>
