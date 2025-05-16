@@ -1,4 +1,6 @@
 <?php
+require_once __DIR__ . '/../utils/config.util.php';
+
 // DECLARATIONS
 $pageTitle = "Boxing Basics";
 $basicPunches = [
@@ -7,15 +9,16 @@ $basicPunches = [
     "Hook" => ["A semi-circular punch thrown with either hand. It is punch delivered in a horizontal arc, typically aimed at the jaw or body. It's characterized by a bent elbow and rotation of the torso, which helps generate force.", "hook.jpg"],
     "Uppercut" => ["A vertical punch thrown upward with either hand. It usually targets the chin or upper abdomen. It's a power punch in boxing, often used in close-quarters combat. The uppercut is thrown with a bent arm, moving upwards from a low starting position.", "uppercut.jpg"]
 ];
+
 $stances = [
     "Orthodox" => ["Right-handed stance (left foot forward)", "orthodox.jpg"],
     "Southpaw" => ["Left-handed stance (right foot forward)", "southpaw.jpg"],
     "Square" => ["Feet parallel to each other, facing the opponent completely (Example of this stance are Mike Tyson, Floyd Patterson, Connor Benn).", "square.jpg"]
 ];
 
-$boxingStyles = getBoxingStyles();
-$fightingStyle = array_key_first($boxingStyles);
-$styleDescription = $boxingStyles[$fightingStyle];
+$fightingStyle = "Slugger/Brawler Style";
+$styleDescription = "Focuses and relies on his own power and constant forward movement without all that fancy footwork. <br>
+Users of this style are usually heavyweights and light heavyweights or just someone who was born with natural power. <br>";
 $styleImage = "slugger-style.jpg";
 ?>
 
@@ -26,13 +29,16 @@ $styleImage = "slugger-style.jpg";
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?php echo $pageTitle; ?> - Madman's Boxing</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 
 <body>
-    <?php include '../components/navigation.component.php'; ?>
+    <?php include __DIR__ . '/../components/navigation.component.php'; ?>
+
     <div class="main-container">
         <h1><?php echo $pageTitle; ?></h1>
+
+
 
         <div class="section">
             <h2>Basic Punches</h2>
