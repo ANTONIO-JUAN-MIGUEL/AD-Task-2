@@ -25,7 +25,7 @@ $founderInfo = getFounderInfo();
     <div class="home-container">
         <h1>Welcome to <?php echo $siteTitle; ?>!</h1>
 
-        <p>Here in Madman's Boxing Basics, you will learn the basic punches in boxing:<br>
+        <p>Here in Madman's Boxing Basics, you will learn the basic punches in boxing:
             <?php
             foreach ($punchTypes as $index => $punch) {
                 echo $punch;
@@ -33,7 +33,9 @@ $founderInfo = getFounderInfo();
                     echo ", ";
                 }
             }
-            ?>. <br> You will also learn the different stances in boxing. His current fighting style is the
+            ?>. <br> <br> You will also learn the different stances in boxing. Our founder's current fighting
+            style<br>is
+            the
             <?php echo $fightingStyle; ?>.
         </p>
 
