@@ -12,3 +12,13 @@ function getPunchTypes()
 {
     return ["Jab", "Straight", "Hook", "Uppercut"];
 }
+
+function getFounderInfo()
+{
+    return [
+        "name" => "Migz \"Madman\" Antonio",
+        "record" => "5 wins and no losses",
+        "division" => "light heavyweight"
+    ];
+}
+?>
