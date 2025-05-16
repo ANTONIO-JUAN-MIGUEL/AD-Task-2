@@ -1,0 +1,205 @@
+/* Styles for the boxing basics page */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #000000, #2b2b2b, #1a1a1a);
+    color: #ffffff;
+    margin: 0;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+/* Headings */
+h1 {
+    color: #ff3333;
+    text-align: center;
+    margin-top: 20px;
+    text-shadow: 2px 2px 4px #000000;
+    padding-bottom: 0; /* Remove padding that was creating space for the line */
+}
+
+h2 {
+    color: #ff6666;
+    text-align: center;
+    margin: 30px auto 15px;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+h2::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 2px;
+    background: #ff3333;
+}
+
+/* Center the heading containers */
+.section > h2 {
+    display: block;
+    text-align: center;
+    width: 100%;
+}
+
+/* Restore red highlights */
+.card h3,
+.featured-content h3 {
+    color: #ff3333 !important; /* Force red color for punch names and style */
+}
+
+strong {
+    color: #ff3333; /* Restore red color for strong elements */
+}
+
+/* Card Styles */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.card {
+    width: 100%;
+    max-width: 500px;
+    background: #2b2b2b;
+    border: 2px solid #ff3333;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    height: 550px;
+    object-fit: cover;
+    border-bottom: 2px solid #ff3333;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card p {
+    margin-top: 10px;
+    color: #dddddd;
+    text-align: center;
+}
+
+/* Featured Card */
+.featured-card {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #2b2b2b;
+    border: 3px solid #ff3333;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.featured-card img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-bottom: 3px solid #ff3333;
+}
+
+.featured-content {
+    padding: 25px;
+}
+
+.featured-content h3,
+.featured-content p {
+    text-align: center;
+}
+
+/* Back Button */
+.back-button {
+    text-align: center;
+    margin: 50px 0 30px;
+}
+
+.back-button a {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #ff3333;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: background-color 0.3s;
+}
+
+/* Back button hover effect */
+.back-button a:hover {
+    background-color: #cc0000;
+    box-shadow: 0 0 10px rgba(255, 51, 51, 0.7);
+}
+
+/* Navigation */
+/* Navigation */
+nav {
+    background: linear-gradient(90deg, #000000, #ff3333, #000000);
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 30px;
+    box-shadow: 0 0 15px rgba(164, 28, 28, 0.5);
+}
+
+nav a {
+    display: inline-block;
+    margin: 0 30px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    background: transparent;
+    border: none;
+    padding: 5px 0;
+    position: relative;
+}
+
+nav a:hover {
+    color: white;
+}
+
+nav a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: width 0.3s ease;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .card {
+        max-width: 100%;
+    }
+    
+    .featured-card img {
+        height: 250px;
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+    
+    h2 {
+        font-size: 1.7rem;
+    }
+    
+    .card img {
+        height: 400px;
+    }
+}
