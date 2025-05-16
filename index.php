@@ -34,8 +34,7 @@ $founderInfo = getFounderInfo();
                 }
             }
             ?>. <br> <br> You will also learn the different stances in boxing. Our founder's current fighting
-            style<br>is
-            the
+            style is the <br>
             <?php echo $fightingStyle; ?>.
         </p>
 
