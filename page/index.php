@@ -30,8 +30,7 @@ $styleImage = "slugger-style.jpg";
 </head>
 
 <body>
-    <?php include '../components/index.php'; ?>
-
+    <?php include '../components/navigation.component.php'; ?>
     <div class="main-container">
         <h1><?php echo $pageTitle; ?></h1>
 
