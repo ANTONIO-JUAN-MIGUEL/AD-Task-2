@@ -21,9 +21,9 @@
 <!-- TODO: Change the zyx-0314 into your github username  -->
 <!-- TODO: Change the WD-Template-Project into the same name of your folder -->
 
-![](https://visit-counter.vercel.app/counter.png?page=ANTONIO-JUAN-MIGUEL/AD-Task-1)
+![](https://visit-counter.vercel.app/counter.png?page=ANTONIO-JUAN-MIGUEL/AD-Task-2)
 
-[![wakatime](https://wakatime.com/badge/user/60a37343-62b8-470c-9dcd-bde373a43c33/project/ac90ab81-f1e2-4c44-b1ac-ea82afd3a42d.svg)]
+[![wakatime](https://wakatime.com/badge/user/60a37343-62b8-470c-9dcd-bde373a43c33/project/51a382ae-2c74-4cdc-a52d-2d6cb7333306.svg)]
 
 ---
 
